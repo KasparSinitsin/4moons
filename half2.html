@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Last Quarter</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+HK:wght@200..900&display=swap');
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen w-screen relative bg-gray-950 text-white">
+   <!-- Top-left Triangle: New -->
+   <a href="new.html" class="absolute top-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-[url('./img/moons1-3.jpg')] bg-cover bg-center clip-triangle-tl"></a>
+
+   <!-- Top-right Triangle: First Half -->
+   <a href="half.html" class="absolute top-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-[url('./img/moons2-4.jpg')] bg-cover bg-center clip-triangle-tr"></a>
+ 
+   <!-- Bottom-right Triangle: Full -->
+   <a href="full.html" class="absolute bottom-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-[url('./img/moons1-3.jpg')] bg-cover bg-center clip-triangle-br"></a>
+ 
+   <!-- Bottom-left Triangle: Last Half -->
+   <a href="half2.html" class="absolute bottom-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-[url('./img/moons2-4.jpg')] bg-cover bg-center clip-triangle-bl"></a>
+
+  <!-- Central Content -->
+  <div class="flex flex-col items-center justify-center px-4 h-full">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4 font-serif text-center">Last Quarter</h1>
+    <div class="flex flex-col justify-center items-center gap-1 w-full max-w-4xl">
+      <img class="w-[300px] md:w-[400px] my-4 rounded-full" src="./img/half2.jpg" alt="Last Quarter Moon">
+    <p class="w-full max-w-2xl text-center">The Last Quarter occurs when the Moon has completed three-quarters of its orbit around the Earth, and half of the Moon’s face is illuminated.</p>
+    <p class="w-full max-w-2xl text-center">The left half of the Moon is illuminated during this phase.</p>
+    <p class="w-full max-w-2xl text-center">Tides during the Last Quarter phase are moderate, similar to the First Quarter.</p>
+  </div>
+</div>
+
+  <style>
+    .clip-triangle-tl {
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
+    .clip-triangle-tr {
+      clip-path: polygon(100% 0, 100% 100%, 0 0);
+    }
+    .clip-triangle-br {
+      clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    }
+    .clip-triangle-bl {
+      clip-path: polygon(0 100%, 0 0, 100% 100%);
+    }
+  </style>
+</body>
+</html>
